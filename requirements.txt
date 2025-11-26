@@ -1,0 +1,60 @@
+# Core Python Utilities
+python-dotenv
+requests
+aiohttp
+
+# LLM / Content Generation
+groq
+google-generativeai
+genai
+tiktoken==0.7.0
+
+# Trend Analysis
+pytrends
+
+# Sentiment Analysis
+textblob
+langdetect==1.0.9
+transformers==4.41.2
+torch==2.2.2 --index-url https://download.pytorch.org/whl/cu118
+
+# Grammar & Readability
+language-tool-python
+textstat
+
+# Google Sheets Integration
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+
+# Scheduler
+APScheduler
+
+# Slack Notifications
+slack_sdk
+
+# Streamlit Dashboard
+streamlit
+pandas
+matplotlib
+
+# Machine Learning
+numpy
+scikit-learn
+joblib
+imblearn
+
+# Social APIs
+praw
+tweepy
+
+# Utility Libraries
+beautifulsoup4
+lxml
+
+# Emoji / NLP Utils
+emoji
+
+# NLP Engine
+spacy==3.7.2
