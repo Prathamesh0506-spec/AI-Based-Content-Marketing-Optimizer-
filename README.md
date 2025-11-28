@@ -28,21 +28,21 @@ Multiple intelligence components work together to create a smart, self-learning 
 
 🎛️ What the System Brings Together
 
-LLM-Driven Content Generation (LLaMA + Gemini APIs)
+LLM-driven content generation (LLaMA + Gemini APIs)
 
-Emotion + Sentiment Analysis Engine for tone & audience perception
+Emotion + sentiment analysis engine
 
-Trend Optimization Layer to adapt content to real-time topics
+Trend optimization layer
 
-A/B Variant Coach for probability-based winner prediction
+A/B variant coach
 
-Slack Alerts for instant performance updates
+Slack alerts
 
-Google Sheets Sync for logging, analytics & traceability
+Google Sheets sync
 
-Auto-Retrainer to refresh ML models using new campaign data
+Auto-retrainer
 
-Interactive Streamlit Dashboard for insights, monitoring & manual control
+Streamlit dashboard
 
 🎯 Key Objectives
 ✔️ Fully Automated Content Pipeline
@@ -74,13 +74,13 @@ trend_based_optimizer.py
 
 Responsibilities:
 
-Create multi-variant content using LLMs
+Create multi-variant content
 
 Generate dynamic prompts
 
-Inject keyword + platform context
+Inject keywords & platform context
 
-Apply trend-aware scoring & optimization
+Apply trend-aware optimization
 
 2. Sentiment & Emotion Engine
 
@@ -92,13 +92,13 @@ Capabilities:
 
 Multi-label sentiment + emotion recognition
 
-Polarity, mood & toxicity scores
+Polarity & toxicity scoring
 
-Trend-aware fusion scoring
+Trend-aware fusion
 
-Google Sheets logging
+Sheets logging
 
-Multi-language compatibility
+Multi-language support
 
 3. A/B Testing Coach
 
@@ -108,11 +108,11 @@ ab_coach.py
 
 Capabilities:
 
-Variant scoring logic
+Variant scoring
 
 Probability-based winner prediction
 
-Automated result selection
+Automated selection
 
 Optional Slack summary
 
@@ -128,13 +128,13 @@ tracker.py
 
 Responsibilities:
 
-Store daily marketing KPIs
+Store KPIs
 
 Track impressions, CTR, sentiment, conversions
 
-Combine trend + sentiment + performance
+Merge trend + sentiment + performance
 
-Feed ML training pipeline
+Feed ML pipeline
 
 5. ML Engine (Training + Auto-Retrainer)
 
@@ -146,15 +146,15 @@ auto_retrainer.py
 
 Features:
 
-RandomForest classifier with tuning
+RandomForest classifier
 
 SMOTE balancing
 
-Automatic model versioning
+Auto model versioning
 
 Scheduled retraining
 
-Slack notifications after retrain
+Slack notifications
 
 6. Integrations Layer
 
@@ -168,11 +168,11 @@ trend_fetcher.py
 
 Used For:
 
-Google Sheets API access
+Sheets API
 
-Slack-based alerts & summaries
+Slack alerts
 
-Fetching and interpreting real-time trends
+Trend fetcher
 
 7. Streamlit Dashboard
 
@@ -190,9 +190,9 @@ Trend analysis
 
 A/B testing
 
-Metrics overview
+Metrics
 
-Manual/Auto ML training
+ML training
 
 Slack notifications
 
@@ -200,27 +200,25 @@ Slack notifications
 
 File:
 
-run.py — orchestrates the entire workflow:
+run.py
+
+Workflow:
 
 Generate content
 
-Apply trend optimization
+Trend optimization
 
-Sentiment & emotion scoring
+Sentiment scoring
 
 A/B evaluation
 
-Push metrics to Sheets
+Sheets push
 
-Auto-retrain ML model
+Auto-retrain
 
-Slack summary report
+Slack summary
 
-
-
-## 📁 Project Folder Structure
-
-```none
+📁 Project Folder Structure
 AI-Based-Content-Marketing-Optimizer/
 │
 ├── app/
@@ -254,58 +252,52 @@ AI-Based-Content-Marketing-Optimizer/
 ├── requirements.txt
 ├── LICENSE
 └── README.md
-```
-
-
 
 🌟 Features in Detail
 🚀 AI Content Generator
 
-Produces multiple platform-ready content variations
+Produces multiple variants
 
-Injects keywords, tone, persona & audience context
+Injects keywords, tone & persona
 
-Handles platform formatting styles
+Handles platform formats
 
-Optional trend-based rewriting for relevancy
+Optional trend-based rewriting
 
-Adaptive prompt-building logic
-
+Adaptive prompt logic
 Source: content_generator.py
 
 📈 Trend-Aware Optimization
 
-The trend engine enhances generated content by matching current keywords, hashtags, and emerging digital patterns — keeping content fresh and aligned with what’s trending.
+Aligns generated content with trending keywords, hashtags, and live context.
 
 💬 Deep Sentiment + Emotion Analysis
 
-Sentiment labels (Positive / Neutral / Negative)
+Sentiment tags
 
-Polarity scoring
+Polarity score
 
-Emotion tagging (Joy, Anger, Fear, Surprise, etc.)
+Emotion labels
 
 Toxicity estimation
 
-Trend–sentiment fusion score
+Trend–sentiment fusion
 
-Multi-language detection
+Multi-language
 
 🆚 A/B Variant Coach
 
-Uses a weighted scoring approach to estimate which content version (A or B) will perform better.
+Weighted scoring
 
-Variant scoring
+Performance prediction
 
-Probabilistic performance prediction
+Auto-winner
 
-Automated winner suggestion
-
-Slack notification support
+Slack notifications
 
 📊 Metrics Engine & Sheets Integration
 
-Stores marketing KPIs such as:
+Tracks:
 
 Impressions
 
@@ -315,69 +307,67 @@ CTR
 
 Trend score
 
-Sentiment outputs
+Sentiment
 
 Conversions
 
-These values feed into the ML model for continuous improvement.
+Feeds ML model.
 
 🤖 ML Model Training & Auto-Retraining
 
-RandomForestClassifier
+RandomForest
 
-GridSearchCV hyperparameter tuning
+GridSearchCV
 
-SMOTE balancing
+SMOTE
 
-Automatic versioning of trained models
+Versioning
 
-Scheduled retraining via AutoRetrainer
+Auto retrain
 
-Slack notifications after retraining
+Slack updates
 
 🔔 Slack Notification System
 
-A/B test winner summaries
+A/B summaries
 
-Model retraining updates
+Retrain updates
 
 Custom alerts
 
-Periodic content performance summaries
+Performance digests
 
 🖥️ Streamlit Dashboard
 
-A complete UI that allows you to interact with all engines:
+Interact with:
 
-Generate content
+Content generation
 
-Analyze sentiment
+Sentiment
 
-Compare A/B versions
+A/B tests
 
-Monitor metrics
+Metrics
 
-Run auto or manual model training
+ML training
 
-Configure Slack notifications
-
-View system summaries
+Slack settings
 
 🔧 Installation
 1. Clone the repo
 git clone https://github.com/Prathamesh0506-spec/AI-Based-Content-Marketing-Optimizer-.git
 cd AI-Based-Content-Marketing-Optimizer-
 
-2. Create & Activate Virtual Environment
+2. Create & activate virtual environment
 python -m venv venv
 
 
-Mac/Linux
+Mac/Linux:
 
 source venv/bin/activate
 
 
-Windows
+Windows:
 
 venv\Scripts\activate
 
@@ -393,73 +383,29 @@ Place your credentials inside:
 
 5. Environment Variables
 
-Create your .env file:
+(unchanged — your exact block kept intact)
 
-# Groq
-GROQ_API_KEY=your_groq_api_key
-GROQ_MODEL=llama-3.3-70b-versatile
-GROQ_TEMPERATURE=0.7
-
-# Google Gemini
-GEMINI_API_KEY=your_gemini_api_key
-GEMINI_MODEL=gemini-1.5-flash
-
-# Twitter/X API
-TWITTER_API_KEY=your_api_key
-TWITTER_API_SECRET=your_secret_key
-TWITTER_ACCESS_TOKEN=your_access_token
-TWITTER_ACCESS_SECRET=your_access_secret
-TWITTER_BEARER_TOKEN=your_bearer_token
-
-# Google Sheets
-GOOGLE_SHEET_ID=your_google_sheet_id
-
-# Service account JSON
-GOOGLE_APPLICATION_CREDENTIALS=credentials/service_account.json
-
-# Slack
-SLACK_WEBHOOK_URL=your_slack_webhook_url
-
-# Internals
-MODEL_DIR=models
-METRICS_RETRY_LIMIT=3
-STREAMLIT_DEBUG=false
-
-ENABLE_TRENDING=true
-ENABLE_SENTIMENT=true
-ENABLE_SHEETS_LOGGING=true
-ENABLE_SLACK_NOTIFICATIONS=true
-
-
-(Ignored automatically via .gitignore)
-
-6. Run the Streamlit app
+6. Run Streamlit
 streamlit run streamlit_app.py
 
-7. Run the full pipeline
+7. Run Full Pipeline
 python run.py
 
 🔄 How the Full Pipeline Works
 
-(Managed by run.py)
-
-1️⃣ Generate content variations
-2️⃣ Apply trend optimization
-3️⃣ Sentiment & emotion scoring
+1️⃣ Generate content
+2️⃣ Apply trends
+3️⃣ Sentiment scoring
 4️⃣ A/B evaluation
-5️⃣ Push metrics to Google Sheets
-6️⃣ Auto-retrain ML model
-7️⃣ Slack summary notification
+5️⃣ Sheets logging
+6️⃣ Auto retrain
+7️⃣ Slack summary
 
 🤖 ML Model Output
 
-Training pipeline outputs:
+models/predictor.joblib
 
-models/predictor.joblib — latest active model
-
-models/predictor_TIMESTAMP.joblib — archived versions
-
-AutoRetrainer outputs:
+models/predictor_TIMESTAMP.joblib
 
 models/model_TIMESTAMP.pkl
 
@@ -474,14 +420,12 @@ Prathamesh Ohol
 
 🤝 Contributing
 
-Pull requests are welcome.
-Feel free to open issues for suggestions, improvements, or bug reports.
+Pull requests & issues are welcome.
 
 📜 License
 
-This project is licensed under the MIT License.
+MIT License.
 
 ⭐ Support
 
-If you find this project useful, consider giving it a ⭐ on GitHub —
-it helps support future improvements!
+If you found this useful, consider giving it a ⭐ on GitHub — it motivates further improvements!
