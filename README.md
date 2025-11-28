@@ -215,3 +215,43 @@ Push metrics to Sheets
 Auto-retrain ML model
 
 Slack summary report
+
+
+
+## 📁 Project Folder Structure
+
+```none
+AI-Based-Content-Marketing-Optimizer/
+│
+├── app/
+│   ├── content_engine/
+│   │   ├── content_generator.py
+│   │   ├── dynamic_prompt.py
+│   │   └── trend_based_optimizer.py
+│   │
+│   ├── sentiment_engine/
+│   │   └── sentiment_analyzer.py
+│   │
+│   ├── integrations/
+│   │   ├── sheets_connector.py
+│   │   ├── slack_notifier.py
+│   │   └── trend_fetcher.py
+│   │
+│   ├── metrics_engine/
+│   │   ├── metrics_hub.py
+│   │   ├── metrics_tracker.py
+│   │   └── tracker.py
+│   │
+│   ├── ab_testing/
+│   │   └── ab_coach.py
+│   │
+│   ├── ml_engine/
+│       ├── train_model.py
+│       └── auto_retrainer.py
+│
+├── streamlit_app.py
+├── run.py
+├── requirements.txt
+├── LICENSE
+└── README.md
+```
