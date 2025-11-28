@@ -218,6 +218,8 @@ Auto-retrain
 
 Slack summary
 
+
+
 📁 Project Folder Structure
 AI-Based-Content-Marketing-Optimizer/
 │
@@ -252,6 +254,8 @@ AI-Based-Content-Marketing-Optimizer/
 ├── requirements.txt
 ├── LICENSE
 └── README.md
+
+
 
 🌟 Features in Detail
 🚀 AI Content Generator
