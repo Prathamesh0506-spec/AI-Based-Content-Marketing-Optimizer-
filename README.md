@@ -219,8 +219,9 @@ Auto-retrain
 Slack summary
 
 
+## 📁 Project Folder Structure
 
-📁 Project Folder Structure
+```none
 AI-Based-Content-Marketing-Optimizer/
 │
 ├── app/
@@ -254,7 +255,7 @@ AI-Based-Content-Marketing-Optimizer/
 ├── requirements.txt
 ├── LICENSE
 └── README.md
-
+```
 
 
 🌟 Features in Detail
